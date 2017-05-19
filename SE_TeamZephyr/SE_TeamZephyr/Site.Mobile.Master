@@ -1,0 +1,152 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="SE_TeamZephyr.Site_Mobile" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Autom8 Carpool Sharing</title>
+
+    <%-- Modernizr Script Bundle --%>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <%-- Load JAVASCRIPTS before CSS --%>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+
+    <%-- Load CSS Styles after Javascript --%>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Personalised Page CSS-->
+    <link href="Content/PageSpecificStyles/GenericPageStyle.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <form runat="server">
+
+        <%-- Scripts: Bootstrap and JavaScript Files --%>
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <%-- NEW ATTEMPT --%>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <img class="first-slide" src="<%=Page.ResolveUrl("~/Content/Images/Generic%20Images/Autom8Logo.png")%>" alt="Autom8 Logo" height="24" width="31" />
+                    </button>
+                    <!--Insert Icon Here-->
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!--Image-->
+                        <li>
+                            <img class="first-slide" src="<%=Page.ResolveUrl("~/Content/Images/Generic%20Images/Autom8Logo.png")%>" alt="Autom8 Logo" height="52" width="68" /></li>
+                        <li><a runat="server" href="WebPages/Default.aspx">Home</a></li>
+                        <li><a runat="server" href="WebPages/Universal/About.aspx">About</a></li>
+                        <li><a runat="server" href="WebPages/Universal/Contact.aspx">Contact Us</a></li>
+                        <li><a runat="server" href="WebPages/Journey/JourneyList.aspx">Find a Journey</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leaderboards <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a runat="server" href="WebPages/LeaderBoards/LeaderboardPage_All.aspx">All Stats</a></li>
+                                <li><a runat="server" href="WebPages/LeaderBoards/Leaderboard_Users.aspx">Stats By User</a></li>
+                                <li><a runat="server" href="WebPages/LeaderBoards/Leaderboard_County.aspx">Stats by County</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+
+                        <%-- Visible to non-registered users --%>
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/WebPages/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/WebPages/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+
+                        <%-- Visible to logged in users --%>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Journeys
+                                        <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a runat="server" href="~/WebPages/Journey/AddAJourney">Add A New Lift</a></li>
+                                        <li><a runat="server" href="~/WebPages/Profile/MyProfile_AcceptedJourneys">Accepted Journeys</a></li>
+                                        <li><a runat="server" href="~/WebPages/Profile/MyProfile_Journeys">My Advertised Journeys</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Journey Information</li>
+                                        <li><a runat="server" href="~/WebPages/Profile/MyProfile_PendingRequests">Passenger Requests</a></li>
+                                    </ul>
+                                    </a></li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+                                        <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a runat="server" href="~/WebPages/Profile/MyProfile_PersonalInfo" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                        </li>
+                                    </ul>
+                                    </a></li>
+                            </ul>
+                        </LoggedInTemplate>
+
+
+                    </asp:LoginView>
+
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+    
+
+
+        <%-- Start of Page Body Content --%>
+        <div class="container body-content">
+                <br />
+        <br />
+        <br />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Autom8 - Carpool Sharing</p>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+            </footer>
+        </div>
+    </form>
+
+</body>
+</html>

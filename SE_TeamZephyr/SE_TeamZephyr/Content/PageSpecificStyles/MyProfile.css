@@ -1,0 +1,710 @@
+﻿body {
+
+    margin: 0 0 0 0;
+	background:url('../../Images/blue background.jpeg');
+	background-size:cover;
+    padding-top:7%;
+    background-repeat:no-repeat;
+    
+	}
+
+/*
+    New profile css
+
+*/
+
+.main {
+
+    margin-top: 40px;
+
+}
+
+.seg1 {
+
+    width: 220px;
+    padding-top:25px;
+
+}
+
+
+
+[class *= seg] {
+    
+    float:left;
+    min-height:1px;
+    margin-left:20px;
+
+}
+
+.container {
+
+    padding-bottom: 17px;
+}
+
+/* Options Segment (left)*/
+
+.seg1list {
+
+border-right: 1px solid #f2f2f2;
+border-left: 1px solid #ddd;
+border-top: 1px solid #ddd;
+margin-bottom: 20px;
+margin-left: 1px;
+list-style: none;
+padding-left: 1px;
+}
+
+.profile-header-menu {
+    background: #cbd0c8;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #413D35;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 0 8px 12px;
+    border: solid 1px #829c8a;
+}
+
+.profile-sub-item {
+
+    background: #f9f9f9;
+    font-weight: bold;
+    color: #413D35;
+    display: block;
+    border-bottom: solid 1px #829c8a;
+
+}
+
+.profile-sub-item-link {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 19px;
+    font-weight: bold;
+    color: #413D35;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+	
+    padding-left: 10px;
+    padding-right: 19px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+.profile-sub-item-link-selected {
+    background: #fff02a none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    padding-left: 10px;
+    padding-right: 19px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.profile-sub-item-link:hover
+{
+	color: #000;
+    background: #fff02a none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+/*
+
+    Main options segment (Right side)
+
+*/
+
+.seg2 {
+    width: 700px;
+    border-radius: 4px;
+}
+
+.form-main {
+
+    border-radius: 3px;
+
+}
+
+.form-heading {
+
+    padding-bottom: 4px;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 28px;
+    font-size: 28px;
+    display: block;
+    -webkit-margin-start: 1px;
+
+
+
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 17px;
+
+}
+
+.main-divider {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+
+    padding: 10px;
+    background-color:rgba(189, 189, 175, 0.57);
+    border: solid 1px #cecece;
+
+    display:block;
+
+       
+}
+
+
+.section {
+    display:block;
+    margin-bottom: 26px;
+    margin: 0 0 26px 0;
+}
+
+
+
+.section-row {
+        margin-bottom: 6px;
+        display:block;
+}
+
+.section-row-label {
+    width: 150px;
+    float: left;
+    padding-right:10px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 1px;
+
+}
+
+.section-row-title {
+
+    margin-left: 142px;
+    margin: 5px 0 0 142px;
+}
+
+
+.textbox {
+
+    border: solid 1px rgba(0, 0, 0, 0.23);
+    display:block;
+    
+}
+
+.dropdownlist {
+    border: solid 1px rgba(0, 0, 0, 0.23);
+    display:block;
+    width:80px;
+}
+
+.bio {
+
+    border: solid 1px rgba(0, 0, 0, 0.23);
+    display:block;
+    width:400px;
+    height:200px;
+    resize:none;
+
+}
+
+.email {
+
+    width:400px;
+
+}
+
+.textbox:active {
+
+    border: solid 1px blue;
+}
+
+.bio:active {
+    border: solid 1px blue;
+}
+
+.dropdownlist:active {
+    border: solid 1px blue;
+}
+
+.bio-info-area {
+   
+    width: 279px;
+    border: 1px solid #bcfafd;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    padding-left: 59px;
+    background: url(http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-info-icon.png) no-repeat;
+    background-size: 60px 60px;
+    margin-left:150px;
+    margin-top:10px;
+    position: relative;
+}
+
+.savebutton {
+    
+    display:inline-block;
+    width:80px;
+    height:40px;
+    background-color:#3f83ff;
+    border: solid 1px rgba(33, 137, 212, 0.64);
+    box-shadow: 5px 3px 3px #464e48;
+    color:white;
+    margin-left:25px;
+
+}
+
+.savebutton:active {
+
+    color:black;
+    background-color:white;
+    border: solid 1px cornflowerblue;
+
+}
+
+.paragraph {
+
+
+    margin-bottom: 10px;
+    display: block;
+    -webkit-margin-start: 1px;
+
+}
+
+.paragraph-space {
+
+    margin-left:45px;
+
+}
+
+.paragraph-center {
+
+    text-align: center;
+    padding-right:10px;
+
+}
+
+text-block {
+
+    display: block;
+    margin: 0 0 50px;
+    font-size: 20px;
+    color: #727272;
+
+}
+
+.image-block {
+
+    background: url(http://www.freeiconspng.com/uploads/upload-icon-3.png);
+    background-size: 310px 200px;
+    display:block;
+    width: 310px;
+    height:200px;
+    line-height: 20px;
+    margin-left:150px;
+    margin-top:10px;
+    position:relative;
+
+}
+
+.choose-file-button {
+
+    display:inline-block;
+    height:40px;
+    background-color:#3f83ff;
+    border: solid 1px rgba(33, 137, 212, 0.64);
+    box-shadow: 5px 3px 3px #464e48;
+    color:white;
+    margin-left:185px;
+    text-align:center;
+    padding-top: 2px;
+    width: 250px;
+    font-size:20px;
+    font-weight:500;
+
+
+}
+.choose-file-button:active {
+
+    color:black;
+    background-color:white;
+    border: solid 1px cornflowerblue;
+}
+
+/*
+    Verification
+*/
+
+.section-smaller {
+
+    display:block;
+    margin: 15px;
+    margin-left:1px;
+    width: 99%;
+    height:100px;
+    background-color:rgba(189, 189, 175, 0.57);
+    border: solid 1px #cecece;
+}
+
+
+.smaller-heading {
+    font-weight: normal;
+    font-size: small;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    width:200px;
+    margin-right:1px;
+    margin-bottom:1px;
+    padding-right:1px;   
+}
+
+.verify-btn {
+    display:inline-block;
+    height:40px;
+    background-color:#3f83ff;
+    border: solid 1px rgba(33, 137, 212, 0.64);
+    box-shadow: 5px 3px 3px #464e48;
+    color:white;
+    text-align:center;
+    padding-top: 2px;
+    width: 220px;
+    font-size:20px;
+    font-weight:500;
+    float:right;
+    margin-right:5%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.verify-btn:active {
+    color:black;
+    background-color:white;
+    border: solid 1px cornflowerblue;
+}
+
+.verify-btn:hover {
+
+    text-decoration:none;
+    color:white;
+}
+
+.verify-paragraph {
+    margin-left:10px;
+    margin-top:5px;
+    float:left;
+    height:60px;
+}
+
+
+
+/*
+    Preferences
+*/
+
+.margin {
+
+    margin-top:20px;
+
+}
+
+.option-icon {
+
+    display:inline-block;
+    width: 85px;
+    height:85px;
+    line-height: 20px;
+    margin-left:25px;
+    position:relative;
+    border-radius:50px;
+    background:url();
+
+}
+
+.option-icon .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.option-icon .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.68) transparent transparent transparent;
+}
+
+.option-icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+/* Smoking Icons*/
+.option-icon-smoking1 {
+
+     
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/No_smoking_symbol.svg/2000px-No_smoking_symbol.svg.png) center/ 85px 85px;
+}
+
+
+.option-icon-smoking2 {
+
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/No_smoking_symbol.svg/2000px-No_smoking_symbol.svg.png) center/ 85px 85px;
+}
+
+.option-icon-smoking3 {
+
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/No_smoking_symbol.svg/2000px-No_smoking_symbol.svg.png) center/ 85px 85px;
+}
+
+
+/* Music Icons */
+
+.option-icon-music1 {
+    background:url(http://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Music-icon.png) center/ 85px 85px;
+}
+
+.option-icon-music2 {
+     background:url(http://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Music-icon.png) center/ 85px 85px;
+}
+
+.option-icon-music3 {
+     background:url(http://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Music-icon.png) center/ 85px 85px;
+}
+
+/* Pets Icons */
+
+.option-icon-pets1 {
+     background:url(http://www.drainbo.com/wp-content/uploads/2014/07/pet-icon.png) center/ 85px 85px;
+}
+
+.option-icon-pets2 {
+     background:url(http://www.drainbo.com/wp-content/uploads/2014/07/pet-icon.png) center/ 85px 85px;
+}
+
+.option-icon-pets3 {
+     background:url(http://www.drainbo.com/wp-content/uploads/2014/07/pet-icon.png) center/ 85px 85px;
+}
+
+/**
+
+    Membership Agreement Page
+
+*/
+
+
+.section-smaller-v {
+
+    display:block;
+    margin: 15px;
+    margin-left:1px;
+    width: 99%;
+    height:90px;
+    background-color:rgba(189, 189, 175, 0.57);
+    border: solid 1px #cecece;
+}
+
+
+.smaller-heading-v {
+    font-weight: normal;
+    font-size: small;
+    color: #fffe31;
+    margin-left: 10px;
+    margin-top: 10px;
+    width:200px;
+    margin-right:1px;
+    margin-bottom:1px;
+    padding-right:1px;
+    border-bottom: 1px solid #fdfdfd;   
+}
+
+.checkbox-v {
+    
+    padding-left:10px;
+
+
+}
+
+.section-smaller-v-b {
+
+    display:block;
+    margin: 15px;
+    margin-left:1px;
+    width: 99%;
+    height:90px;
+    background-color:rgba(255, 255, 255, 0);
+    border: solid 1px rgba(206, 206, 206, 0);
+}
+
+.verify-btn-v {
+    display:inline-block;
+    height:40px;
+    background-color:#3f83ff;
+    border: solid 1px rgba(33, 137, 212, 0.64);
+    box-shadow: 5px 3px 3px #464e48;
+    color:white;
+    text-align:center;
+    padding-top: 2px;
+    width: 220px;
+    font-size:20px;
+    font-weight:500;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:210px;
+}
+
+.verify-btn-v:active {
+    color:black;
+    background-color:white;
+    border: solid 1px cornflowerblue;
+}
+
+.verify-btn-v:hover {
+
+    text-decoration:none;
+    color:white;
+}
+
+.verify-paragraph-v {
+    margin-left:30%;
+    margin-top:5px;
+    float:none;
+    height:16px;
+}
+
+/**
+
+    Car
+
+*/
+
+.section-c {
+    display:block;
+    padding-top:25px;
+    padding-bottom:15px;
+    margin-bottom: 26px;
+    margin: 0 0 26px 0;
+    background-color: rgba(189, 189, 175, 0.57);
+    border: solid 1px #cecece;
+}
+
+.savebutton-c {
+
+    margin-top:20px;
+}
+
+.savebutton-wide {
+
+    display:inline-block;
+    width:150px;
+    height:40px;
+    background-color:#3f83ff;
+    border: solid 1px rgba(33, 137, 212, 0.64);
+    box-shadow: 5px 3px 3px #464e48;
+    color:white;
+    margin-left:25px;
+}
+
+.savebutton-wide:active {
+
+    color:black;
+    background-color:white;
+    border: solid 1px cornflowerblue;
+
+}
+
+/*
+    Change Password
+
+*/
+
+.verification-label {
+
+    font-size:larger;
+    margin-left:10%;
+    color:red;
+    background-color:rgba(255, 255, 255, 0.28)
+    
+
+}
+
+/*
+    Delete Account
+
+*/
+
+.help-delete-account-list {
+    margin-bottom: 20px;
+    list-style: none outside none;
+    margin: 0 0 20px;
+}
+
+.savebutton-red {
+
+    background-color:crimson;
+    width:150px;
+    margin-left:430px;
+    margin-top:170px;
+}
+
+.section-row-c {
+        margin-bottom: 6px;
+        display:block;
+        height:30px;
+}
+
+.section-row-label-c {
+    width: 300px;
+    float: left;
+    padding-right:10px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 1px;
+
+}
+
+.dropdownlist-c {
+    border: solid 1px rgba(0, 0, 0, 0.23);
+    display:block;
+    width:80px;
+}
+
+.a-link {
+
+    color:#00d0ff;
+}
+

@@ -1,0 +1,149 @@
+﻿body {
+    /*background: url("http://p1.pichost.me/i/11/1344899.jpg") no-repeat center center fixed;*/
+    /*background-image: url('../../Images/blue background.jpeg');*/
+    background-color: #0076ab;
+    background-size: cover;
+    color: white;
+    font-family: OpenSans-Regular;
+    zoom: 100%;
+
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    background-color: #474545;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('../../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url('../../fonts/OpenSans-Bold.ttf');
+}
+
+label {
+    color: deepskyblue;
+    margin-bottom: auto;
+    padding: 1.5%;
+}
+
+h1{
+    font-family:OpenSans-Bold;
+    color: #00DD0E;
+    padding-bottom:2%;
+    margin: 2%;
+}
+
+h2{
+    font-family:OpenSans-Bold;
+    color: #00DD0E;
+    padding-bottom:2%;
+    margin: 2%;
+}
+
+h3{
+    font-family:OpenSans-Bold;
+    color: #9ff60d;
+    padding-bottom:2%;
+    margin: 2%;
+}
+
+h4{
+    font-family:OpenSans-Bold;
+    font:bold;
+    padding-bottom:2%;
+    margin: 2%;
+}
+
+h5{
+    font-family:OpenSans-Bold;
+    padding-bottom:2%;
+    margin: 2%;
+    color:white;
+    font-size: 15px;
+   
+}
+
+h6{
+    font-family:OpenSans-Bold;
+    color: #9ff60d;
+    font:bold;
+    padding-bottom:2%;
+    margin: 2%;
+}
+
+p{
+    font-family:OpenSans-Regular;
+    font-size: 16px;
+    color: white;
+}
+
+.alignRight{
+    float:right !important;
+}
+
+.alignLeft{
+    float:left !important;
+}
+
+.alignCenter{
+    text-align: center; 
+}
+
+a{
+    color: white;
+    font-family: OpenSans-Regular;
+
+}
+
+#searchBar {
+    align-content: center;
+}
+
+.div.btn btn-warning{
+    margin: 5%;
+    padding-left: 10px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #b618ed;
+}
+
+.btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00DD0E;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+#wrnLink, #wrnLink:hover {
+    color:  #9ff60d;
+}
+
+/*
+    Placenolder format and font color
+*/
+.form-control::-webkit-input-placeholder { color: dimgrey; }
+.form-control:-moz-placeholder { color: dimgrey; }
+.form-control::-moz-placeholder { color: dimgrey; }
+.form-control:-ms-input-placeholder { color: dimgrey; }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: dimgrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: dimgrey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: dimgrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: dimgrey;
+}

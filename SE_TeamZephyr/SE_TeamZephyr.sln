@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE_TeamZephyr", "SE_TeamZephyr\SE_TeamZephyr.csproj", "{792B12AB-0E37-4AA5-8B12-C544F82CACCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5AA882F2-1F8A-4956-9597-1E1CA0975604}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{974C080F-A457-46E5-BAA2-98D66D264038}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SE_TeamZephyr-VM-dev.json = PublishScripts\Configurations\SE_TeamZephyr-VM-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{792B12AB-0E37-4AA5-8B12-C544F82CACCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792B12AB-0E37-4AA5-8B12-C544F82CACCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792B12AB-0E37-4AA5-8B12-C544F82CACCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792B12AB-0E37-4AA5-8B12-C544F82CACCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{974C080F-A457-46E5-BAA2-98D66D264038} = {5AA882F2-1F8A-4956-9597-1E1CA0975604}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿//Formatting Shortcut:
+Ctrl+K, Ctrl+D
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+//Database Setup Strings:
+
+add-migration -configurationTypeName Autom8Conf
+update-database -configurationTypeName Autom8Conf
+
+add-migration -configurationTypeName IdentityConf
+update-database -configurationTypeName identityConf
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+//PAYPAL INFO
+ID:
+216243385345-8ijolhpq5815bbsvlnp0eluefel96pvn.apps.googleusercontent.com 
+
+Client Secret:
+IMES3ZlZ2kkbcpQUCrQljIIZ 
+
+
+//SELLER ACCOUNT - merchant account set up as default
+Username:	bcampbell.v3-facilitator_api1.gmail.com
+Password:	4B5FWCFNSZZ2RUA7
+
+//BUYER ACCOUNT - use when testing payments
+Username:	bcampbell.v3-buyer@gmail.com
+Password:	Passw0rd!
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+//CSS
+To use google icon images:
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Remember the SSL URL you used above ( https://localhost:44300/ unless you've created other SSL projects).
