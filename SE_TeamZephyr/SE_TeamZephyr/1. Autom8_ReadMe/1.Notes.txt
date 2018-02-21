@@ -21,17 +21,6 @@ Client Secret:
 IMES3ZlZ2kkbcpQUCrQljIIZ 
 
 
-//SELLER ACCOUNT - merchant account set up as default
-Username:	bcampbell.v3-facilitator_api1.gmail.com
-Password:	4B5FWCFNSZZ2RUA7
-
-//BUYER ACCOUNT - use when testing payments
-Username:	bcampbell.v3-buyer@gmail.com
-Password:	Passw0rd!
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
 //CSS
 To use google icon images:
